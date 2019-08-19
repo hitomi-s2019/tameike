@@ -1,4 +1,10 @@
 # Starter pipeline
+- task: AzureVmssDeployment@0
+  inputs:
+    azureSubscription: 'Microsoft Azure (1c11305e-cc14-45f0-a3ce-2e50b0cc5d41)'
+    action: 'Update image'
+    vmssName: 'sip2vmsstest'
+    vmssOsType: 'Linux'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
